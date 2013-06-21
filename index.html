@@ -10,6 +10,7 @@
 	<!-- Stylesheets -->
 	<link type='text/css' rel='stylesheet' href='components/bootstrap-css/css/bootstrap.min.css' />
 	<link type='text/css' rel='stylesheet' href='components/bootstrap-css/css/bootstrap-responsive.min.css' />
+	<link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 
 	<style>
 		body {
@@ -25,40 +26,74 @@
 			border: none !important;
 		}
 		#site-wrap {
-			margin-top: 50px;
+			margin-top: 90px;
 		}
 		#intro {
-			background: rgb(146, 199, 176);
+			background: rgb(89, 176, 184);
+			background-image: url(http://www.bassvisuals.com/wordpress_bv/preview/Bass_Visuals_Earth_Fit_Width_Stars_Blue_HD_1920x1080_30p.jpg);
 			padding: 30px;
-			height: 900px;
+		}
+		#more {
+			background: green;
 		}
 		#mission {
 			background: #eee;
 			padding: 30px;
 		}
+		.display {
+			font-family: 'Lato', sans-serif;
+			font-weight: 100;
+		}
+		#site-nav .nav {
+			margin-top: 30px;
+			float: right;
+		}
+		.promo-image {
+			width: 200px;
+			margin: 5px;
+			height: 150px;
+		}
+		.panel {
+			min-height: 500px;
+		}
 	</style>
 </head>
 <body>
 	<header class='row'>
-		<nav class='navbar navbar-fixed-top'>
+		<nav id='site-nav' class='navbar navbar-fixed-top'>
 			<div class='navbar-inner'>
-				<a class='brand'><h1 class='title'>• ERI• </h1></a>
+				<a class='brand'><h1 class='title'> • ERI • </h1></a>
 				<ul class='nav'>
-					<li><a href='#'>Link 1</a></li>
-					<li><a href='#'>Link 2</a></li>
-					<li><a href='#'>Link 3</a></li>
+					<li><a href='#'>Home</a></li>
+					<li><a href='#'>Research</a></li>
+					<li><a href='#'>People</a></li>
+					<li><a href='#'>Outreach</a></li>
+					<li><a href='#'>Administrative</a></li>
+					<li><a href='#'>Annual Reports</a></li>
 				</ul>
 			</div>
 		</nav>
 	</header>
-	<div id='site-wrap' class='container'>
-		<section id='intro' class='pull-right span10'>
-			<article id='mission' class='span6 pull-right'>
-				<p>The mission of the Earth Research Institute (ERI) is to support research and education in the sciences of our solid, fluid, and living Earth.</p>
-				<p>Our areas of research comprise Natural Hazards, Human Impacts, Earth System Science, and Earth Evolution.</p>
-				<p>ERI was formed in July of 2011 through the merger of the Institute for Crustal Studies and the Institute for Computational Earth System Science.</p>
-				<p>ERI strives to build upon the existing research strengths of our founding units while fostering new interdisiciplinary collaborations examining how Earth processes affect mankind and how mankind perturbs the Earth.</p>
-			</article>
+	<div id='site-wrap'>
+		<section id='intro' class='panel'>
+			<div class='container'>
+				<section class='span6 pull-left'>
+					<img class='promo-image img-rounded' src='images/annrep-2001.jpg' />
+					<img class='promo-image img-rounded' src='images/annrep-2007.jpg' />
+					<img class='promo-image img-rounded' src='images/norm-01.jpg' />
+					<img class='promo-image img-rounded' src='images/singer-01_0.jpg' />
+				</section>
+				<article id='mission' class='span5 pull-right'>
+					<h2 class='display'>The Earth Research Institute @ UCSB</h2>
+					<p>The mission of the Earth Research Institute (ERI) is to support research and education in the sciences of our solid, fluid, and living Earth.</p>
+					<p>Our areas of research comprise Natural Hazards, Human Impacts, Earth System Science, and Earth Evolution.</p>
+					<p>ERI was formed in July of 2011 through the merger of the Institute for Crustal Studies and the Institute for Computational Earth System Science.</p>
+					<p>ERI strives to build upon the existing research strengths of our founding units while fostering new interdisiciplinary collaborations examining how Earth processes affect mankind and how mankind perturbs the Earth.</p>
+				</article>
+			</div>
+		</section>
+		<section id='more' class='panel'>
+
 		</section>
 	</div>
 	<script src='components/jquery/jquery.min.js'></script>
